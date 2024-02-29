@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #003b95;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .search-box {
+        display: flex;
+        align-items: center;
+    }
+    
+    .search-box input[type="text"],
+    .search-box input[type="date"],
+    .search-box button {
+        margin-right: 10px;
+    }
+    
+    #hotelResults {
+        padding: 20px;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+</style>
+<body>
+    <header>
+        <h1>Hotel Booking</h1>
+        <div class="search-box">
+            <input type="text" id="locationInput" placeholder="Enter location...">
+            <input type="date" id="checkInDate">
+            <input type="date" id="checkOutDate">
+            <button onclick="searchHotels()">Search</button>
+        </div>
+    </header>
+    <section id="hotelResults" class="hidden">
+        <!-- Hotel results will be displayed here -->
+    </section>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
